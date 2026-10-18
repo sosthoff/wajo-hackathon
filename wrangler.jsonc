@@ -17,7 +17,18 @@
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"kv_namespaces": [
+		{
+			"binding": "MEDIA_DIET",
+			"id": "82e42a1718f841dc99eeb9c177cd1ded"
+		}
+	],
+	// LaMetric meter target. GITHUB_TOKEN is a secret: `npx wrangler secret put GITHUB_TOKEN`
+	"vars": {
+		"GIST_ID": "dc39ce16bafd683d514130b9292afa18",
+		"LAMETRIC_FILE": "gistfile1.txt"
+	}
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
